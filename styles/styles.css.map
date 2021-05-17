@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAG,CAAC;EACV,OAAO,EAAG,CAAC;EACX,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "styles.scss",
+        "_basesRules.scss",
+        "_tags.scss",
+        "_fonts.scss",
+        "_functions.scss",
+        "_mediaQuery.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

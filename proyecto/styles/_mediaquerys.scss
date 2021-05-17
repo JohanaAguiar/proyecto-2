@@ -1,0 +1,1032 @@
+// Mobile 
+@media screen and (min-width: 320px) and (max-width: 580px){
+
+    @include menu-hamburguesa;
+
+    main{
+        margin-top:39px;
+        z-index: 1;
+    }
+
+    main .intro-main .main-1{
+        .p-desk{
+            display: none;
+        }
+
+        padding-left: 16px;
+        width: 100%;
+        display: block; 
+        @include f-Sans;
+        opacity: 100%;
+        span{
+            width: 10px;
+            height: 42px;
+            @include f-Sans;
+            
+        }
+        
+    }   
+    // fin main_1
+
+    // inicio main_2
+    main .intro-main .intro{
+        text-align: justify;
+        min-width: 288px;
+        min-height: 66px;
+        margin: 16px 16px 36px 16px;
+        
+        @include f-Mono;
+    }
+    main .intro-main .intro-2{
+        display: none;
+    }
+    // fin main_2
+
+    // inicio main_3
+    main .intro-main .boton-1{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        
+        @include f-mono-med;
+        @include est-btn;
+        color: #060A24;
+    }
+    main .intro-main .boton-1:hover{
+        @include f-mono-med;
+        @include est-btn-hover;
+        color: #FFFFFF;
+    }
+    // fin main_3
+
+    // inicio main_4
+    main .potcast{
+        width: 100%; 
+    }
+    main .potcast .contenedor{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        width: 100%;
+        min-height: 1203.5px;
+        display: inline-block;
+        position: relative;
+        
+        .episodios{
+            width: 157px;
+            height: 42px;
+            margin: 64px 147px 21px 16px;
+           
+            p{
+                // estilo letra
+                @include f-Sans();
+                color: #FFFFFF;
+            }
+        }
+       
+        .svg-1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 10vw;
+        }
+        
+        .svg-2 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 10vw;
+        }
+        
+        .gap{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            
+            iframe{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 298px;
+                min-height: 232px;
+                margin-bottom: 11px;
+                border:0;
+                
+            }
+        }
+    }
+    // fin main_4
+
+    // inicio main_5
+    main .potcast .celular{
+        position: relative;
+        bottom: calc(143.5px - 48px);
+        
+        img{
+            width: 100%;
+            min-width: 320px;
+            min-height: 519px;
+        }
+
+        .venimos-parrafo{
+            display: none;
+        }
+        .venimos-parrafo .venimos{
+            display: none;
+        }
+        .venimos-parrafo .parrafos-venimos{
+            display: none;
+        }
+    }
+    // fin main_5
+
+    // inicio main_6
+    main .historia .venimos{ 
+        min-width: 288px;
+        min-height: 84px;
+        margin: -68.5px 16px 8px 16px;
+
+        @include f-Sans;       
+    }
+
+    main .historia .parrafos-venimos{
+        min-width: 288px;
+        min-height: 254px;
+        margin: 0px 16px 54px 16px;
+        p{
+            @include f-Mono;
+            text-align: left;
+        }
+    }
+    // fin main_6
+
+    // inicio main_7
+    main .invitados{
+        .titulo-inv{
+            min-width: 288px;
+            min-height: 84px;
+            margin: 0 16px 14px 16px;
+
+            @include f-Sans;
+        }
+
+        .conten-inv{
+            display: flex;
+            flex-flow: column wrap;
+            img{
+                width: 100%;
+                min-width: 320px;
+                min-height: 243px;
+            }
+        }
+    }
+    // fin main_7
+
+    // inicio main_8
+    main .temas{
+        // titulo 
+        .tit-temas{
+            min-width: 288px;
+            min-height: 84px;
+            margin: 48px 16px 24px 16px;
+            
+            @include f-Sans();
+        }
+        
+        // contenido 
+        .contenedor-temas{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        .tema{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            .box img{
+                min-width: 104px;
+                min-height: 104px;
+            }
+            .tit-stilo{
+                @include f-Sans();
+                font-weight: 600;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 52px;
+            }
+        }
+    }
+    // fin main_8
+
+    // Inicio main_9
+    main .novedades{
+        width: 100%;
+        height: 341px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        position: relative;
+        padding-bottom: 0;
+        
+        .svg-3{
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 7vh;
+        }
+        
+        .nov-titulo{
+            min-width: 288px;
+            min-height: 126px;
+            
+            @include f-Sans();
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 36px; 
+
+            margin: 0 auto;
+            padding-top: 64px;
+            padding-bottom: 36px;
+            padding-right: 16px;
+        
+        }
+        
+        
+        .nov-btn{
+            border: 1px solid black;
+            width: 288px;
+            height: 48px;
+            margin: 0 auto;
+        }
+        
+        .nov-btn{
+            @include est-btn;
+            color: #060A24;
+            border: none;
+            margin: 0 auto;
+
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            
+            a{
+                font-size: 16px;
+            }
+        }
+        .nov-btn:hover{
+            @include est-btn-hover;
+            @include f-mono-med;
+            margin: 0 auto;
+            color: #FFFFFF;
+            a{
+                font-size: 16px;
+            }
+        }
+        
+    }
+    // fin main_9
+
+    // inicio footer
+    footer{
+        margin-top: 24px;  
+    }
+    
+    footer .footer {
+        width: 227px;
+        height: 22px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        .foo-1{
+            @include f-Mono;
+        }
+    } 
+    
+    footer .padre-redes{
+        width: calc(320px - 90px);
+        margin: 0 auto;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 31px;
+        .box-r{
+            width: 16px;
+            height: 28px;
+            
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+
+    } 
+    // fin footer
+}
+
+// tablet
+@media screen and (min-width: 581px) and (max-width: 768px){
+    @include menu-hamburguesa;
+
+    // Inicio main_1
+    main .intro-main {
+        width: 100%;
+    
+        .main-1{
+            .p-mobil{
+                display: none;
+            }
+            margin-top: 120px;
+            margin-left: 60px;
+            @include f-Sans-des;
+            font-size: 7vw;
+            span{
+                font-size: 64px;
+                color: #0000EC;
+                letter-spacing: 0;
+            }
+        
+        }
+    }
+    // fin main_1
+
+    // inicio main_2
+    main .intro-main .intro{
+        display: none;
+    }
+    
+    main .intro-main .intro-2{
+        @include f-Mono-des;
+    
+        width: 100%;
+        max-width: 628px;
+        max-height: 48px;
+        text-align: justify;
+        margin: 0 auto;
+        margin-bottom: 56px;
+    
+        
+    }
+    // fin main_2
+
+    // inicio main_3
+    main .intro-main .boton-1{
+        width: 226px;
+        height: 56px;
+        margin-bottom: 5px;
+        margin-left: 60px;
+        background: #00F3BB;
+        
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        font-size: 18px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            @include f-Mono-des-me;
+        }
+    }
+    
+    main .intro-main .boton-1:hover{
+    @include est-btn-hover;
+    }
+    // fin main_3
+
+    // inicio main_4
+    main .potcast .contenedor{
+        width: 100%;
+        height: 1042.6px; 
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        display: inline-block;
+        position: relative;
+    
+    
+        .episodios{
+            width: 209px; 
+            height: 62px; 
+            margin-top: 186px;
+            margin-left: 200px;
+            
+            p{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 48px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+            }
+        }
+                
+        .gap{
+            width: calc(100% - 200px);
+            margin-left: 100px; 
+            margin-top:26px;
+    
+            
+            display: grid;
+            grid-template: repeat(2,232px)/repeat(2,584px);
+            grid-template: 1fr 1fr / 1fr 1fr;
+            grid-gap: 72px;
+            
+            iframe{
+                width: 100%;
+                max-width: 584px; 
+                min-height: 232px;
+                border:0;
+            }
+        }
+    
+            
+        .svg-1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 10vw;
+            }
+            
+        .svg-2 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 10vw;
+                
+        }
+        
+    }
+    // fin main_4
+
+    // inicio main_5
+    
+    main .potcast .celular{
+        
+        position: relative;
+        bottom: 168.2px;
+        margin-right: 200px;
+        width:100%;
+        display: flex;
+        flex-flow: row;
+    
+        img{
+            width: 100%;
+            max-width: 457.6px;
+            min-height: 660px;
+        }
+    
+        .venimos-parrafo{
+            margin-left: 10.4px;
+            position: relative;
+            top: 189px;
+            margin-bottom: 0;    
+        }
+        .venimos-parrafo .venimos{
+            width:100%;
+            max-width: 400px;
+            min-height: 62px;
+            margin-bottom: 24px;
+            @include f-Sans-des;
+            font-size: 4vw;        
+        }
+        .venimos-parrafo .parrafos-venimos{
+            max-width: 464px;
+            max-height: 204px;
+            padding-right:25px;
+            
+            @include f-Mono-des;
+            font-size: 1.4vw;
+            text-align: justify;
+        }
+    
+    }    
+
+// inicio main_6
+main .historia{
+    display: none;
+}
+// fin main_6
+
+// inicio main_7
+main{
+    .titulo-inv{
+        width: 100%;
+        margin-top: -168.2px;
+        margin-bottom: 36px;
+        @include f-Sans-des;
+        font-size: 48px;
+        text-align: center;
+    }
+    .conten-inv{
+        top: -168.2px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            max-width: 200px;
+            min-height: 120px;
+        }
+    }
+}
+// fin main_7
+
+// fin main_8
+main .temas{
+    .tit-temas{
+        @include f-Sans-des;
+        font-size: 48px;
+        margin-left: 100px;
+        margin-top: 64px;
+    }
+
+    .contenedor-temas{
+        margin: 56px auto;
+    
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        
+
+        .tema{
+            .box{
+                width: 100%;
+                max-width: 260px;
+                min-height: 130px;
+            }
+
+            .tit-stilo{
+                width: 100%;
+                max-width: 220px;
+                margin-top: 16px;
+                @include f-Sans-des-sem;
+                
+            }
+
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+
+        }
+        
+    }
+    
+}
+// fin main_8
+
+// inicio main_9
+main .novedades{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);;
+    width: 100%;
+    min-height: 518px;
+
+    .nov-titulo{
+        margin: 0 auto;
+        margin-top: 113px;
+        text-align: center;
+        @include f-Sans-des;
+        color: #FFFFFF;
+        font-size: 48px;
+    }
+    .svg-3{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top:0px;
+    }
+    .nov-btn{
+        margin: 0 23vw;
+        margin-top: 36px;
+        width: 100%;
+        max-width: 345px;
+        min-height: 56px;
+        background: #00F3BB;
+        border: none;
+
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            @include f-Sans-des-sem;
+            font-size: 18px;
+            line-height: 24px;
+            text-decoration: none;
+        }
+        
+    }
+
+    .nov-btn:hover{
+        @include est-btn-hover;
+    }
+}
+// fin main_9
+
+footer{
+    height: 95px;
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 36px;
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+    .padre-redes{
+        margin-right: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        .box-r{
+            margin-right: 2vw;
+            width: 28px;
+            height: 18px;
+        }
+    }
+}
+}
+
+// Desktop 
+@media screen and (min-width: 769px){
+    header{
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 5;
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background: #FFFFFF;
+     
+        .menu #checkbox{
+            display: none;
+        }
+        img{
+            min-width: 36px;
+            min-height: 36px;
+            margin: 22px 100px;
+            margin-right: 0;
+        }
+    }
+    header .menu ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+        margin: 26px 100px;
+        margin-left: 0;
+        li{
+            margin-right: 48px;
+            width: 6%;
+            height: 0.7%;
+            a{
+                text-decoration: none;
+            }
+            a:link{
+                @include f-Mono();
+                font-size: 16px;
+                line-height: 28px;
+            }
+            a:hover{
+                @include f-mono-med();
+                color: #00F3BB;
+                line-height: 28px;
+                text-decoration: line-through;
+                
+            }
+            a:active{
+                @include f-Mono();
+                font-size: 16px;
+                line-height: 28px;
+                color:rgba(6,10,36,0.56);
+                text-decoration: line-through;
+            }
+            
+        } 
+    }
+    // fin estilos header 
+    
+    // Inicio main_1
+    main .intro-main {
+        width: 100%;
+    
+        .main-1{
+            .p-mobil{
+                display: none;
+            }
+            margin-top: 120px;
+            margin-left: 200px;
+            @include f-Sans-des;
+
+            span{
+                font-size: 64px;
+                color: #0000EC;
+                letter-spacing: 0;
+            }
+        
+        }
+    }
+    // fin main_1
+    
+    // inicio main_2
+    main .intro-main .intro{
+        display: none;
+    }
+    
+    main .intro-main .intro-2{
+        @include f-Mono-des;
+    
+        width: 100%;
+        max-width: 628px;
+        max-height: 48px;
+        text-align: justify;
+        margin-left: 200px;
+        margin-bottom: 56px;
+       
+        
+    }
+    // fin main_2
+    
+    // inicio main_3
+    main .intro-main .boton-1{
+        width: 226px;
+        height: 56px;
+        margin-bottom: 5px;
+        margin-left: 200px;
+        background: #00F3BB;
+    
+        border: none;
+        font-size: 18px;
+        text-align: center;
+        
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            @include f-Mono-des-me;
+        }
+    }
+    
+    main .intro-main .boton-1:hover{
+    @include est-btn-hover;
+    }
+    // fin main_3
+    
+    // inicio main_4
+    main .potcast .contenedor{
+        width: 100%;
+        height: 1042.6px; 
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        display: inline-block;
+        position: relative;
+      
+    
+        .episodios{
+            width: 209px; 
+            height: 62px; 
+            margin-top: 186px;
+            margin-left: 200px;
+            
+            p{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 48px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+            }
+        }
+                
+        .gap{
+            width: calc(100% - 200px);
+            margin-left: 100px; /*deberia ser 100px*/
+            margin-top:26px;
+    
+            
+            display: grid;
+            grid-template: repeat(2,232px)/repeat(2,584px);
+            grid-template: 1fr 1fr / 1fr 1fr;
+            grid-gap: 72px;
+            
+            iframe{
+                width: 100%;
+                max-width: 584px; 
+                min-height: 232px;
+                border:0;
+            }
+        }
+    
+              
+        .svg-1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 10vw;
+            }
+            
+        .svg-2 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 10vw;
+                
+        }
+        
+    }
+    // fin main_4
+    
+    // inicio main_5
+    
+    main .potcast .celular{
+        
+        position: relative;
+        bottom: 168.2px;
+        margin-right: 200px;
+        display: flex;
+        flex-flow: row;
+    
+        img{
+            width: 100%;
+            max-width: 457.6px;
+            min-height: 660px;
+        }
+    
+        .venimos-parrafo{
+            margin-left: 62.4px;
+            position: relative;
+            top: 189px;
+            margin-bottom: 0;
+        }
+        .venimos-parrafo .venimos{
+            max-width: 399px;
+            min-height: 62px;
+            margin-bottom: 24px;
+    
+            @include f-Sans-des;
+            font-size: 48px;        
+        }
+        .venimos-parrafo .parrafos-venimos{
+            max-width: 464px;
+            max-height: 204px;
+            
+            @include f-Mono-des;
+        }
+    
+    }    
+    
+    // inicio main_6
+    main .historia{
+        display: none;
+    }
+    // fin main_6
+    
+    // inicio main_7
+    main{
+        .titulo-inv{
+            width: 100%;
+            margin-top: -168.2px;
+            padding-left: 200px;
+            margin-bottom: 36px;
+            @include f-Sans-des;
+            font-size: 48px;
+        }
+        .conten-inv{
+            top: -168.2px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            img{
+                width: 33.33%;
+                max-width: 499px;
+                min-height: 364px;
+            }
+        }
+    }
+    // fin main_7
+    
+    // fin main_8
+    main .temas{
+        .tit-temas{
+            @include f-Sans-des;
+            font-size: 48px;
+            margin-left: 200px;
+            margin-top: 64px;
+        }
+    
+        .contenedor-temas{
+            margin: 56px auto;
+         
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            
+    
+            .tema{
+                .box{
+                    width: 100%;
+                    max-width: 260px;
+                    min-height: 130px;
+                    text-align: center;
+                }
+    
+                .tit-stilo{
+                    width: 100%;
+                    max-width: 220px;
+                    margin-top: 16px;
+                    @include f-Sans-des-sem;
+                }
+    
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+    
+            }
+            
+        }
+        
+    }
+    // fin main_8
+    
+    // inicio main_9
+    main .novedades{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);;
+        width: 100%;
+        min-height: 518px;
+    
+        .nov-titulo{
+            margin: 0 auto;
+            margin-left: 26%;
+            margin-top: 113px;
+            @include f-Sans-des;
+            color: #FFFFFF;
+            font-size: 48px;
+        }
+        .svg-3{
+            width: 100%;
+            height: 100px;
+            position: relative;
+            top:0px;
+        }
+        .nov-btn{
+            margin-left: 38%;
+            margin-top: 36px;
+            width: 100%;
+            max-width: 345px;
+            min-height: 56px;
+            background: #00F3BB;
+            border: none;
+
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                @include f-Sans-des-sem;
+                font-size: 18px;
+                line-height: 24px;
+                text-decoration: none;
+            }
+            
+        }
+    
+        .nov-btn:hover{
+            @include est-btn-hover;
+        }
+    }
+    // fin main_9
+    
+    footer{
+        height: 95px;
+        width: 100%;
+        padding-right: 64px;
+        padding-left: 100px;
+        padding-top: 36px;
+        
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        
+        .padre-redes{
+            margin-right: 100px;
+            display: flex;
+            flex-flow: row wrap;
+            .box-r{
+                margin-right: 36px;
+                width: 28px;
+                height: 18px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 861px) and (max-width: 1000px){
+    .parrafo{
+        font-size: 1.3vw;
+    }
+    .titulo{
+        font-size: 6vw;
+    }
+}
+
