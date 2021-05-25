@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="./assets/logo-desktop.svg" alt="logo"></a>
+        <a class="logo" href="index.html"></a>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox">
@@ -17,58 +17,69 @@
                 <span></span>
                 <span></span>
                 <ul class>
-                    <li><a href="#">MODO NOCTURNO</a></li>
-                    <li><a href="./components/favoritos.html">FAVORITOS</a></li>
-                    <li><a href="./components/misGifos.html">MIS GIFOS</a></li>
-                    <li><a href="./components/crearGifos.html"><img src="./assets/button-crear-gifo.svg" alt="btn-mas"></a></li>
+                    <li><a id="modo_nocturno" href="#">Modo Nocturno</a></li>
+                    <span class="linea"></span>
+                    <li><a href="/components/favoritos.html">FAVORITOS</a></li>
+                    <span class="linea"></span>
+                    <li><a href="/components/misGifos.html">MIS GIFOS</a></li>
+                    <span class="linea"></span>
+            <!--    La versión mobile no la tiene
+                    <li><a href="./components/crearGifos.html"><img src="./assets/button-crear-gifo.svg" alt="btn-mas"></a></li>-->
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class = "main-1-main">
-            <div class="text-main">
-                <div>Inspírate, busca, guarda y crea</div>
-                <div>los mejores GIFOS</div>
-            </div>
-    
-            <div class="image-main-1">
-                <img src = "./assets/ilustra_header.svg" alt ="logo"></img>
-            </div>
-    
+        <section class = "intro">
+            <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+            <img class="image-intro" src="/assets/ilustra_header.svg" alt="GIFOS_INTRO"><div class="text-main">
+
             <div class="search">
-    
+                <input type="text" id="search-gifo" class="search-gifo" placeholder="Busca GIFOS y más">
+                <button></button>
             </div>
     
-            <div>
-                <div class = "trending">Trending:</div>
-                <div class = "reactions">Reactions, Entertainment, Sports, Stickers, Artist</div>
+            <div class="trending">
+                <h3>Trending:</h3>
+                <p>Reactions, Entertainment, Sports, Stickers, Artist</p>
             </div>
+            
+            <!-- Sección para JavaScript
+            <div class="search_2">
+                <h2>Mascotas</h2>
+                <div class="search_gifos"> GIFOS BUSCADOS
+                </div>
+                <button class="see_more">VER MÁS</button>
+            </div>-->
+            
         </section>
 
-        <section class = "main-2-main">
-            <div class = "title">Trending GIFOS</div>
-            <div class = "subtitle">Mira los últimos GIFOS de nuestra comunidad.</div>
+        <section class = "trending-gifos">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos GIFOS de nuestra comunidad.</p>
             <div class="carrusel">
-                <img src="" alt="fle-izq">
-                <img src="" alt="cat">
-                <img src="" alt="song">
-                <img src="" alt="women">
-                <img src="" alt="fle-der">
+                <button class="fle-izq"></button>
+                <div class="tendencias">
+                    <img src="" alt="cat">
+                    <img src="" alt="song">
+                    <img src="" alt="women">
+                </div>
+                <button class="fle-der"></button>
             </div>
         </section>
         
     </main>
 
     <footer>
+        <p>Compartir en:</p>
         <div class="redes">
-            <img src="./assets/icon_facebook.svg" alt="icon-facebook">
-            <img src="./assets/icon_twitter_noc.svg" alt="icon-twitter">
-            <img src="./assets/icon_instagram.svg" alt="icon-instagram">
+            <a href="">< class="facebook" src="/assets/icon_facebook.svg" alt="icon-facebook"></a>
+            <a href=""><img class="twiter" src="/assets/icon-twitter.svg" alt="icon-twitter"></a>
+            <a href=""><img class="instagram" src="/assets/icon_instagram.svg" alt="icon-instagram"></a>
         </div>
         
-        <div class="copyRight">© GIFOS 2020 All Rights Reserved.</div>
+        <p class="copyRight">© GIFOS 2020 All Rights Reserved.</p>
     </footer>
     <script src="./components/app.js"></script>
 </body>
